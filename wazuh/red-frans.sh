@@ -35,7 +35,7 @@ sleep_random
 # Create user
 # --------------------------------------------------
 
-echo "[+] Creating a simulated hacker!"
+echo "[+] Creating a simulated hacker! 1337"
 
 sudo useradd -m "$TEST_USER"
 
@@ -86,8 +86,8 @@ sleep_random
 
 sudo -iu "$TEST_USER" bash <<EOF
 
-echo "[+] Current user:"
-whoami
+echo "[+] Current user"
+# whoami
 
 sleep \$((RANDOM % 3 + 1))
 
